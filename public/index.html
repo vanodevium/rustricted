@@ -1,56 +1,189 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RUSTRICTED Public License</title>
-  <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <title>RUSTRICTED Public License</title>
+    <meta
+      name="description"
+      content="The first and only public licence that is truly fair"
+    />
+    <meta itemprop="name" content="RUSTRICTED Public License" />
+    <meta
+      itemprop="description"
+      content="The first and only public licence that is truly fair"
+    />
+    <meta itemprop="image" content="./rustricted.svg" />
+    <meta property="og:url" content="https://rustricted.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RUSTRICTED Public License" />
+    <meta
+      property="og:description"
+      content="The first and only public licence that is truly fair"
+    />
+    <meta property="og:image" content="./rustricted.svg" />
+    <meta name="twitter:card" content="./rustricted.svg" />
+    <meta name="twitter:title" content="RUSTRICTED Public License" />
+    <meta
+      name="twitter:description"
+      content="The first and only public licence that is truly fair"
+    />
+    <meta name="twitter:image" content="./rustricted.svg" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
 
-    body, div {
-      margin: 0;
-      padding: 0;
-    }
+      body,
+      div {
+        margin: 0;
+        padding: 0;
+      }
 
-    body,
-    html {
-      height: 100%;
-    }
+      body,
+      html {
+        height: 100%;
+      }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
 
-    blockquote {
-      max-width: 42rem;
-      margin: 0 auto;
-    }
+      blockquote {
+        max-width: 42rem;
+        margin: 0 auto;
+      }
 
-    pre {
-      background: #eee;
-      padding: 1rem;
-      white-space: pre-wrap;
-      word-wrap: break-word;
-    }
+      pre {
+        background: #eee;
+        padding: 1rem;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
 
-    .footer {
-      margin-top: auto;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-  <div class="content">
-    <blockquote>
-  <pre>
+      .footer {
+        margin-top: auto;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .is-hidden {
+        display: none;
+      }
+
+      .copiable {
+        position: relative;
+      }
+
+      .copiable:hover .copy-button {
+        display: flex;
+      }
+
+      .copy-button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+
+        padding: 8px;
+        border-radius: 6px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+        transition: 0.15s linear;
+      }
+
+      .copy-button:not(:focus-visible, .copied) {
+        display: none;
+      }
+
+      .copy-button:focus-visible {
+        outline: 2px solid #0969da;
+        outline-offset: -2px;
+      }
+
+      .copy-button:hover {
+        background-color: #eff2f5;
+      }
+
+      .copy-icon {
+        fill: #59636e;
+      }
+
+      .copy-succeed-icon {
+        display: none;
+        fill: #1a7f37;
+      }
+
+      .copy-button.copied .copy-icon {
+        display: none;
+      }
+
+      .copy-button.copied .copy-succeed-icon {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="is-hidden">RUSTRICTED Public License</h1>
+    <div class="container">
+      <div class="content">
+        <blockquote class="copiable">
+          <button data-copy-target-id="content" class="copy-button">
+            <svg
+              aria-hidden="true"
+              height="16"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              class="copy-icon"
+            >
+              <path
+                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"
+              ></path>
+              <path
+                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"
+              ></path>
+            </svg>
+            <svg
+              aria-hidden="true"
+              height="16"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              class="copy-succeed-icon"
+            >
+              <path
+                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"
+              ></path>
+            </svg>
+          </button>
+          <pre data-copy-content-id="content">
 RUSTRICTED Public License
 
 Copyright (c) [year] [full name]
@@ -78,10 +211,45 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-  </pre>
-    </blockquote>
-  </div>
-  <div class="footer">2024</div>
-</div>
-</body>
+  </pre
+          >
+        </blockquote>
+      </div>
+      <div class="footer">2024</div>
+    </div>
+    <script>
+      (function () {
+        const copyBtnListener = async function (e) {
+          const copyBtn = e.target.closest(".copy-button");
+          if (!copyBtn) return;
+
+          const content = getCopiableContent(copyBtn);
+          await copy(content);
+          showSuccessState(copyBtn);
+        };
+
+        document.addEventListener("click", copyBtnListener);
+
+        window.onbeforeunload = () => {
+          document.removeEventListener("click", copyBtnListener);
+        };
+      })();
+
+      function getCopiableContent(copyBtn) {
+        const contentId = copyBtn.dataset.copyTargetId;
+        return document.querySelector(`[data-copy-content-id="${contentId}"]`)
+          .innerText;
+      }
+
+      function copy(content) {
+        if (!navigator?.clipboard) return;
+        return navigator.clipboard.writeText(content);
+      }
+
+      function showSuccessState(copyBtn) {
+        copyBtn.classList.add("copied");
+        setTimeout(() => copyBtn.classList.remove("copied"), 1500);
+      }
+    </script>
+  </body>
 </html>
