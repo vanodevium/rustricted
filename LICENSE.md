@@ -1,6 +1,6 @@
 RUSTRICTED Public License
 
-Copyright (c) 2024 Vano Devium
+Copyright (c) 2022 Vano Devium
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose, with or without charge, is hereby granted to everyone except:
